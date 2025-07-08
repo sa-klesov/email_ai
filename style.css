@@ -1,0 +1,178 @@
+/* Вдохновлено файлом constants.ts */
+:root {
+    --c-primary-blue: #1a73e8;
+    --c-text-dark: #202124;
+    --c-text-medium: #5f6368;
+    --c-background-main: #ffffff;
+    --c-background-alt: #f8f9fa;
+    --c-border-color: #e0e0e0;
+}
+
+body {
+    /* Используем системные шрифты, как указано в constants.ts */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: #f1f3f4; /* Фон страницы, чтобы выделить "письмо" */
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+
+.email-container {
+    max-width: 680px;
+    width: 100%;
+    margin: 20px auto;
+    background-color: var(--c-background-main);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border: 1px solid var(--c-border-color);
+}
+
+.email-header {
+    background-color: var(--c-background-main);
+    color: var(--c-text-dark);
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--c-border-color);
+}
+
+.email-header h1 {
+    margin: 0 0 10px;
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--c-text-dark);
+}
+
+.email-header p {
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--c-text-medium);
+}
+
+.email-body {
+    padding: 30px 40px;
+    font-size: 15px;
+    color: var(--c-text-dark);
+}
+
+.email-body p {
+    margin: 0 0 1.5em;
+    line-height: 1.8;
+}
+
+.greeting {
+    margin-bottom: 2em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid var(--c-border-color);
+}
+
+.section-title {
+    margin: 2em 0 1em;
+    color: var(--c-text-dark);
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid var(--c-primary-blue);
+    padding-bottom: 10px;
+}
+
+.feature-block {
+    background-color: var(--c-background-alt);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid var(--c-primary-blue);
+}
+
+.feature-title {
+    color: var(--c-text-dark);
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.feature-block p {
+    margin: 0;
+    line-height: 1.6;
+    color: var(--c-text-medium);
+    font-size: 14px;
+}
+
+.cta-section {
+    text-align: center;
+    margin: 40px 0 25px;
+}
+
+.cta-section p {
+    line-height: 1.6; 
+    color: var(--c-text-medium); 
+    font-size: 15px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: var(--c-primary-blue);
+    color: #ffffff;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #185abc;
+}
+
+.email-footer {
+    background-color: var(--c-background-alt);
+    color: var(--c-text-medium);
+    padding: 20px 30px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.6;
+    border-top: 1px solid var(--c-border-color);
+}
+
+.email-footer p {
+    margin: 8px 0;
+}
+
+.email-footer a {
+    color: var(--c-primary-blue);
+    text-decoration: none;
+}
+
+.email-footer a:hover {
+    text-decoration: underline;
+}
+
+.offer-link {
+    margin-top: 12px;
+    font-size: 15px;
+}
+
+.offer-link a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+    .email-container {
+        margin: 0;
+        border-radius: 0;
+        border: none;
+    }
+    .email-body {
+        padding: 20px;
+    }
+}

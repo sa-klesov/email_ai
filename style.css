@@ -31,8 +31,8 @@ body {
 .document-container {
     background-color: var(--bg-document);
     width: 100%;
-    max-width: 800px; /* Ширина, близкая к А4 */
-    min-height: 1120px; /* Высота, близкая к А4 */
+    max-width: 800px;
+    min-height: 1120px;
     box-shadow: 0 5px 25px rgba(0,0,0,0.1);
     border: 1px solid var(--border-color);
     animation: fadeIn 1s ease-out;
@@ -69,10 +69,17 @@ body {
     font-size: 20px;
     font-weight: 700;
     color: var(--primary-color);
-    margin: 0 0 20px 0;
+    margin: 0 0 15px 0;
     padding-bottom: 10px;
     border-bottom: 2px solid var(--primary-color);
     display: inline-block;
+}
+
+.section-subtitle {
+    font-size: 16px;
+    color: var(--text-light);
+    margin-top: -10px;
+    margin-bottom: 25px;
 }
 
 .document-section p {
@@ -83,6 +90,8 @@ body {
 
 .subsection {
     margin-bottom: 25px;
+    padding-left: 15px;
+    border-left: 3px solid #f0f0f0;
 }
 
 .subsection h3 {
@@ -91,26 +100,37 @@ body {
     margin-bottom: 10px;
 }
 
-.services-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+/* Стили для тарифов */
+.pricing-card-doc {
+    background-color: #f8f9fa;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
 }
-
-.services-list li {
-    font-size: 16px;
+.pricing-card-doc h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: var(--text-dark);
+}
+.pricing-desc-doc {
     margin-bottom: 15px;
-    display: flex;
-    align-items: flex-start;
+    color: var(--text-light);
+    font-size: 15px;
 }
-
-.services-list li span {
+.price-line-doc {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid #e0e0e0;
+    font-size: 16px;
+}
+.price-line-doc strong {
     color: var(--primary-color);
     font-weight: 700;
-    margin-right: 15px;
-    font-size: 20px;
-    line-height: 1;
 }
+
 
 .cta-section {
     text-align: center;
@@ -150,10 +170,19 @@ body {
     margin: 5px 0;
 }
 
-.document-footer a {
+.contact-details {
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.contact-details a {
     color: var(--primary-color);
     font-weight: 500;
     text-decoration: none;
+}
+.contact-details a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
